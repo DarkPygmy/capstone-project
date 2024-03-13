@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Boardgame Collection Manager</title>
+</head>
+<body>
+    <header>
+        <h2>Boardgame Collection Manager</h2>
+        <nav>
+            <a href="./index.html">Boardgames</a>
+            <a href="./addGame.html">Add Boardgame</a>
+        </nav>
+    </header>
+
+    <form id="game-form">
+        <input id="game-name" type="text" placeholder="Name of Game"/>
+        <input id="game-date" type="date" />
+        <textarea id="game-desc" rows="6" type="text" placeholder="Description of Game"  ></textarea>
+        <button>Add Boardgame</button>
+    </form>
+
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="./addGame.js"></script>
+</body>
+</html>
