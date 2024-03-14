@@ -2,11 +2,92 @@ body {
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 200%;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white; 
+}
+
+.game-header {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+.game-options {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    padding: 0 40px;
+
+}
+
+header h2 {
+    font-size: larger;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    text-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+
+}
+
+
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
   }
   
 
 
-
-.game-card {
-    border: blue 1px solid; 
-}
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
