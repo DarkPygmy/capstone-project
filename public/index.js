@@ -1,5 +1,14 @@
 const gameContainer = document.getElementById('game-container')
 
+const removeGame = (id) => {
+    axios.delete(`http://localhost:4545/api/game/${id}`)
+    .then(res => {
+        gameContainer.innerHTML = ''
+        res.data.forEach(createCard)
+    })
+    .catch(err => console.log(err))
+}
+
 const createCard = game => {
     let card = document.createElement('div')
     card.classList += 'game-card'
@@ -14,6 +23,7 @@ const createCard = game => {
     gameName.textContent = game.name
 
     let trashIcon = document.createElement('h3')
+    trashIcon.addEventListener('click', () => removeGame(game.id))
     trashIcon.textContent = '🚮'
 
     
